@@ -47,6 +47,11 @@ func main() {
 	router := gin.Default()
 
 	router.GET("/recipes", recipesHandler.ListRecipeHandler)
+	router.POST("/recipes", recipesHandler.NewRecipeHandler)
+	router.GET("/recipe/:id", recipesHandler.GetOneRecipeHandler)
+	router.GET("/recipe", recipesHandler.SearchRecipeHandler)
+	router.PUT("/recipe/:id", recipesHandler.UpdateRecipeHandler)
+	router.DELETE("/recipe/:id", recipesHandler.DeleteOneRecipeHandler)
 
 	router.Run(":3000")
 }
