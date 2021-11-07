@@ -1,8 +1,2 @@
-docker-compose.yml
-Dockerfile
-nginx.conf
-.gitignore
-
 client/node_modules
 client/public
-client/Dockerfile
