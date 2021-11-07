@@ -34,7 +34,12 @@ services:
     depends_on:
       - api
     networks:
-      - app_network  
+      - app_network 
+
+  dashboard:
+    image: dashboard
+    networks:
+      - app_network     
 
 networks:
   app_network:      

@@ -1,2 +1,7 @@
 client/node_modules
 client/public
+client/Dockerfile
+docker-compose.yml
+Dockerfile
+nginx.conf
+.gitignore
